@@ -15,10 +15,10 @@ export const getBoundingRegion = (items) => {
 
     items.forEach((place) => {
         const { latitude, longitude } = place.coordinates;
-        if (latitude < minLat) minLat = latitude;
-        if (latitude > maxLat) maxLat = latitude;
-        if (longitude < minLon) minLon = longitude;
-        if (longitude > maxLon) maxLon = longitude;
+        if (latitude < minLat) {minLat = latitude;}
+        if (latitude > maxLat) {maxLat = latitude;}
+        if (longitude < minLon) {minLon = longitude;}
+        if (longitude > maxLon) {maxLon = longitude;}
     });
 
     const midLat = (minLat + maxLat) / 2;

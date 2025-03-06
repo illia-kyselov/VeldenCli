@@ -31,7 +31,7 @@ export default function MapScreen() {
     };
 
     const selectedPlace = useSelector((state) => {
-        if (!selectedPlaceInfo) return null;
+        if (!selectedPlaceInfo) {return null;}
         return state.places[selectedPlaceInfo.category].find(
             (item) => item.id === selectedPlaceInfo.id
         );

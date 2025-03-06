@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import ShareButton from '../components/UI/ShareButton';
 
 export default function AboutScreen() {
-    const shareMessage = "Discover Velden Local Austrian Cuisine – your ultimate guide to authentic Austrian dining! Explore top local restaurants, traditional dishes, and the rich culinary heritage of Velden.";
+    const shareMessage = 'Discover Velden Local Austrian Cuisine – your ultimate guide to authentic Austrian dining! Explore top local restaurants, traditional dishes, and the rich culinary heritage of Velden.';
 
     return (
         <LinearGradient

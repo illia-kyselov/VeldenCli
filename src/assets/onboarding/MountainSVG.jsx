@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path, Defs, LinearGradient, Stop } from "react-native-svg"
+import * as React from 'react';
+import Svg, { Path, Defs, LinearGradient, Stop } from 'react-native-svg';
 const MountainSVG = (props) => (
     <Svg
         xmlns="http://www.w3.org/2000/svg"
@@ -34,5 +34,5 @@ const MountainSVG = (props) => (
             </LinearGradient>
         </Defs>
     </Svg>
-)
-export default MountainSVG
+);
+export default MountainSVG;

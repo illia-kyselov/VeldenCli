@@ -12,7 +12,7 @@ const ExploreCard = ({ category, onSearchNew }) => {
 
     useEffect(() => {
         dispatch(getRandomPlace({ category, previousId: currentPlace?.id }));
-    }, [dispatch, category]);
+    }, [dispatch, category, currentPlace?.id]);
 
     return (
         <View style={styles.container}>

@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path } from "react-native-svg"
+import * as React from 'react';
+import Svg, { Path } from 'react-native-svg';
 const RestaurantsSVG = (props) => (
     <Svg
         xmlns="http://www.w3.org/2000/svg"
@@ -17,5 +17,5 @@ const RestaurantsSVG = (props) => (
             d="M15.66 26.57a7.223 7.223 0 0 1-5.073-2.096l-1.03-1.03a.593.593 0 0 0-.838 0l-6.308 6.277c-1.125 1.124-1.526 2.78-.97 4.4.032.091.068.18.11.267.75 1.534 2.203 2.424 3.793 2.424a4.132 4.132 0 0 0 2.942-1.22l8.413-8.453a.349.349 0 0 0 .098-.276v-.02a.344.344 0 0 0-.382-.317c-.25.028-.503.043-.755.044Z"
         />
     </Svg>
-)
-export default RestaurantsSVG
+);
+export default RestaurantsSVG;

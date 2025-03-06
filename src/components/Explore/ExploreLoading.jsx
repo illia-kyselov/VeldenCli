@@ -33,7 +33,7 @@ const ExploreLoading = ({ category, onLoadingComplete }) => {
     const IconComponent = iconMapping[category] || CafeSVG;
 
     const getDisplayCategory = (cat) => {
-        if (cat === 'outdoorDining') return 'Outdoor Dining';
+        if (cat === 'outdoorDining') {return 'Outdoor Dining';}
         return cat.charAt(0).toUpperCase() + cat.slice(1);
     };
 

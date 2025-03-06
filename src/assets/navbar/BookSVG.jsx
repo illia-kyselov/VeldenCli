@@ -1,5 +1,5 @@
-import * as React from "react"
-import Svg, { Path } from "react-native-svg"
+import * as React from 'react';
+import Svg, { Path } from 'react-native-svg';
 const BookSVG = (props) => (
     <Svg
         xmlns="http://www.w3.org/2000/svg"
@@ -15,5 +15,5 @@ const BookSVG = (props) => (
             clipRule="evenodd"
         />
     </Svg>
-)
-export default BookSVG
+);
+export default BookSVG;

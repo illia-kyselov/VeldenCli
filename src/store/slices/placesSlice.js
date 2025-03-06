@@ -224,7 +224,7 @@ export const placesSlice = createSlice({
         getRandomPlace: (state, action) => {
             const { category } = action.payload;
             const places = state[category];
-            if (!places || places.length === 0) return;
+            if (!places || places.length === 0) {return;}
             const randomIndex = Math.floor(Math.random() * places.length);
             state.currentPlace[category] = places[randomIndex];
         },
