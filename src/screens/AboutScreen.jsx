@@ -5,7 +5,8 @@ import Header from '../components/Header';
 import ShareButton from '../components/UI/ShareButton';
 
 export default function AboutScreen() {
-    const shareMessage = 'Discover Velden Local Austrian Cuisine – your ultimate guide to authentic Austrian dining! Explore top local restaurants, traditional dishes, and the rich culinary heritage of Velden.';
+    const shareMessage =
+        'Discover Velden Local Austrian Cuisine – your ultimate guide to authentic Austrian dining! Explore top local restaurants, traditional dishes, and the rich culinary heritage of Velden.';
 
     return (
         <LinearGradient
@@ -29,30 +30,42 @@ export default function AboutScreen() {
 
             <ScrollView contentContainerStyle={styles.contentContainer}>
                 <View style={styles.tile}>
-                    <Text style={styles.title}>About Velden Local Austrian Cuisine</Text>
-                    <Text style={styles.description}>
-                        Welcome to Velden Local Austrian Cuisine, your ultimate guide to exploring the rich and diverse
-                        culinary world of Velden, Austria. Whether you're a food enthusiast or a casual traveler, our app
-                        provides an immersive experience into the heart of Austrian dining, focusing on local restaurants,
-                        traditional dishes, and culinary heritage.
+                    <Text style={styles.title}>
+                        About Velden Local Austrian Cuisine
                     </Text>
                     <Text style={styles.description}>
-                        Discover Velden’s Best Spots: The app features a curated selection of the finest restaurants, cafes,
-                        outdoor dining spots, and bars in Velden. Browse through comprehensive details including restaurant
-                        names, ratings, photos, and descriptions to find your next favorite dining location.
+                        Welcome to Velden Local Austrian Cuisine, your ultimate guide to
+                        exploring the rich and diverse culinary world of Velden, Austria.
+                        Whether you're a food enthusiast or a casual traveler, our app
+                        provides an immersive experience into the heart of Austrian dining,
+                        focusing on local restaurants, traditional dishes, and culinary
+                        heritage.
                     </Text>
                     <Text style={styles.description}>
-                        Learn About Austrian Culinary Traditions: From classic dishes like Wiener Schnitzel and Tafelspitz to the
-                        unique flavors of Velden, this app lets you dive deep into Austria’s culinary history. Explore traditional
-                        cooking methods, local specialties, and the regional ingredients that make Velden a hidden gem for food lovers.
+                        Discover Velden’s Best Spots: The app features a curated selection
+                        of the finest restaurants, cafes, outdoor dining spots, and bars in
+                        Velden. Browse through comprehensive details including restaurant
+                        names, ratings, photos, and descriptions to find your next favorite
+                        dining location.
                     </Text>
                     <Text style={styles.description}>
-                        Save Your Favorite Locations: Easily save your favorite spots and revisit them whenever you wish.
-                        Never forget where you enjoyed the best Austrian dishes!
+                        Learn About Austrian Culinary Traditions: From classic dishes like
+                        Wiener Schnitzel and Tafelspitz to the unique flavors of Velden,
+                        this app lets you dive deep into Austria’s culinary history. Explore
+                        traditional cooking methods, local specialties, and the regional
+                        ingredients that make Velden a hidden gem for food lovers.
                     </Text>
                     <Text style={styles.description}>
-                        Designed for Food Lovers: Whether you’re visiting Velden for the first time or you’re a local looking to rediscover your city,
-                        Velden Local Austrian Cuisine offers a simple and intuitive experience. You can explore, learn, and taste your way through the best of Austrian food culture.
+                        Save Your Favorite Locations: Easily save your favorite spots and
+                        revisit them whenever you wish. Never forget where you enjoyed the
+                        best Austrian dishes!
+                    </Text>
+                    <Text style={styles.description}>
+                        Designed for Food Lovers: Whether you’re visiting Velden for the
+                        first time or you’re a local looking to rediscover your city, Velden
+                        Local Austrian Cuisine offers a simple and intuitive experience. You
+                        can explore, learn, and taste your way through the best of Austrian
+                        food culture.
                     </Text>
 
                     <ShareButton shareText={shareMessage} />
@@ -76,9 +89,7 @@ const styles = StyleSheet.create({
         height: 469,
     },
     headerGradient: {
-        flex: 1,
-        justifyContent: 'flex-end',
-        paddingBottom: 16,
+        ...StyleSheet.absoluteFillObject,
     },
     contentContainer: {
         paddingTop: 160,

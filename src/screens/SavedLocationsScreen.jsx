@@ -56,11 +56,11 @@ export default function SavedLocationsScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingHorizontal: 36,
     },
     scrollContent: {
         marginTop: 160,
         paddingBottom: 136,
+        marginHorizontal: 36,
     },
     title: {
         fontFamily: 'Libre Baskerville',

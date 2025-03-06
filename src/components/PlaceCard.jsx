@@ -34,7 +34,7 @@ const PlaceCard = ({ place, category }) => {
                 <Text style={styles.ratingText}>Rating: ★★★★☆ {place.rating}</Text>
                 <Text style={styles.descriptionText}>{place.description}</Text>
                 <View style={styles.buttonRow}>
-                    <TouchableOpacity onPress={handleOpenLocation}>
+                    <TouchableOpacity onPress={handleOpenLocation} style={styles.openLocationWrapper}>
                         <LinearGradient
                             colors={['#BA9F6A', '#B0996C', '#4A402D']}
                             start={{ x: 0, y: 0 }}
@@ -100,16 +100,17 @@ const styles = StyleSheet.create({
     buttonRow: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
         width: '100%',
+        gap: 8,
+    },
+    openLocationWrapper: {
+        flex: 1,
     },
     openLocationButton: {
-        width: 166,
         height: 50,
         borderRadius: 14,
         justifyContent: 'center',
         alignItems: 'center',
-        minWidth: 176,
     },
     openLocationText: {
         fontFamily: 'Nunito Sans',
